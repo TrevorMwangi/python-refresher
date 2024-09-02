@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Try it yourself </title>
+    </head>
+    <body>
+        <P id="sample"> Hello world! </P>
+        <button onclick="changeContent();"> Change word </button>
+
+        <script type="text/javascript">
+            var isLorem = false;
+
+            function changeContent() {
+                var sample = document.getElementById("sample");
+
+                if (isLorem) {
+                    sample.innerHTML = "FML";
+                } else {
+                    sample.innerHTML = "I am Excited!";
+                }
+
+                isLorem = !isLorem;
+            
+            }
+        </script>
+    </body>
+</html>
