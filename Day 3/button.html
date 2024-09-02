@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Try it yourself </title>
+        <title>Try it yourself</title>
     </head>
     <body>
-        <P id="sample"> Hello world! </P>
-        <button onclick="changeContent();"> Change word </button>
+        <p id="sample">Hello world!</p>
+        <button onclick="changeContent();">Change word</button>
 
         <script type="text/javascript">
-            var isLorem = false;
+            var index = 0;
 
             function changeContent() {
                 var sample = document.getElementById("sample");
 
-                if (isLorem) {
+                if (index === 0) {
+                    sample.innerHTML = "Press button";
+                } else if (index === 1) {
                     sample.innerHTML = "FML";
-                } else {
+                } else if (index === 2) {
                     sample.innerHTML = "I am Excited!";
+                } else if (index === 3) {
+                    sample.innerHTML = "Carpe Diem!";
+                } else if (index === 4) {
+                    sample.innerHTML = "Stay Positive!";
+                } else if (index === 5) {
+                    sample.innerHTML = "Get money!!"
                 }
 
-                isLorem = !isLorem;
-            
+                // Increment the index and reset it if it exceeds the number of phrases
+                index++;
+                if (index > 5) {
+                    index = 0;
+                }
             }
         </script>
     </body>
 </html>
+ 
