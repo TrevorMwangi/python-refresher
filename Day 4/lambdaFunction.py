@@ -16,4 +16,8 @@ numbers = [1, 2, 3, 4, 5]
 
 # Square each number
 squared_numbers = list(map(lambda x: x ** 2, numbers))
-print(squared_numbers)  # Output: [1, 4, 9, 16, 25]
+print(squared_numbers) 
+
+# Nested lambda to compute a result
+result = (lambda x: (lambda y: x + y)(10))(5)
+print(result)  
