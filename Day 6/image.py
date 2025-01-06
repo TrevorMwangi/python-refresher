@@ -1,3 +1,5 @@
+# Pip install captcha
+
 from captcha.image import ImageCaptcha
 import random
 
